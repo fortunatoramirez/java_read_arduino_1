@@ -20,20 +20,20 @@ import java.util.Scanner;
 import com.fazecast.jSerialComm.*;
 public class LeerSerial extends JFrame implements ActionListener{
     
-	private String PUERTO = "COM6"; //"/dev/ttyUSB0"
-	private int BAUDRATE = 9600;
+    //private String PUERTO = "COM6"; //"/dev/ttyUSB0"
+    private int BAUDRATE = 9600;
 
     private JPanel panel;
-	private JLabel lblMedida;
-	private JTextField txtMedida;
-	private JButton btnIniciar;
-	private JButton btnDetener;
+    private JLabel lblMedida;
+    private JTextField txtMedida;
+    private JButton btnIniciar;
+    private JButton btnDetener;
     private JButton btnNivel1;
     private JButton btnNivel2;
     private JButton btnNivel3;
     private JButton btnNivel4;
 
-	private Monitor monitor;
+    private Monitor monitor;
     private Thread t;
     private SerialPort comPort;
 
