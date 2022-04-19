@@ -9,7 +9,7 @@ void setup(){
 
 void loop(){
   
-  if(Serial.available()>0){ //if data has been written to the Serial stream
+  if(Serial.available()>0){
     data=Serial.read();
     if(data == 's'){
       val = analogRead(analogPinA0);
