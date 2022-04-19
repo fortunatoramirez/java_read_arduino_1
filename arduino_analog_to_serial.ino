@@ -11,7 +11,7 @@ void loop(){
   
   if(Serial.available()>0){
     data=Serial.read();
-    if(data == 's'){
+    if(data == 'r'){
       val = analogRead(analogPinA0);
       //val = val >> 0; //se recorre un bit
       Serial.println(val);
